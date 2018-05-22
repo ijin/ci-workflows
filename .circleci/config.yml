@@ -8,5 +8,9 @@ jobs:
       - run: echo 'hi'
       - deploy:
           command: echo 'deploy'
-
-
+  build2:
+    docker:
+      - image: busybox
+    steps:
+      - checkout
+      - run: echo 'hello'
