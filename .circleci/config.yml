@@ -6,5 +6,7 @@ jobs:
     steps:
       - checkout
       - run: echo 'hi'
-      - deploy: echo 'deploy'
+      - deploy:
+          command: echo 'deploy'
+
 
